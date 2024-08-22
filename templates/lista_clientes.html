@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody id="lista-clientes">
+    <tr>
+      {% for cliente in clientes %} {% include 'item_cliente.html' %} {% endfor
+      %}
+    </tr>
+  </tbody>
+</table>
